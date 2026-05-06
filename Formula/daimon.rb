@@ -11,7 +11,7 @@ class Daimon < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sonicboom15/daimon/releases/download/v0.0.3/daimon_0.0.3_darwin_amd64.tar.gz"
-      sha256 "6b9f37f9534d57430a1bef791ead04560b99669e021142eb8143a0a82bd10882"
+      sha256 "2eed2b0e467f1fd92a6d54fed42b8a4640f40c4ff7bc109b4896658e1dae3aa8"
 
       define_method(:install) do
         bin.install "daimon"
@@ -19,7 +19,7 @@ class Daimon < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sonicboom15/daimon/releases/download/v0.0.3/daimon_0.0.3_darwin_arm64.tar.gz"
-      sha256 "a3ab3615d2bc0821ed2a53e90461972cc478462aba6ee4b75bfa3448b1116b7e"
+      sha256 "5fb4a1bf06aeac46d1b6d53ab2c1c9a50c789db2288f586087317e542b47b717"
 
       define_method(:install) do
         bin.install "daimon"
@@ -30,14 +30,14 @@ class Daimon < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sonicboom15/daimon/releases/download/v0.0.3/daimon_0.0.3_linux_amd64.tar.gz"
-      sha256 "b5a60dc847791fb9b37a19fdbea6586fa14a2f05d730af10d37b3b167c45c050"
+      sha256 "bd11db0cb0da90667e35578bcf669408ea54c514894b364a8672e30d3ac8697e"
       define_method(:install) do
         bin.install "daimon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sonicboom15/daimon/releases/download/v0.0.3/daimon_0.0.3_linux_arm64.tar.gz"
-      sha256 "49f6bbca8ca8d93ae8c7f7c67fe758cfb71217d717887aeb3cd30f47eb5457be"
+      sha256 "11faf5bb03b08b6e099515b6b7a6a0077d31e1326493df1463bb650f8ee8ef81"
       define_method(:install) do
         bin.install "daimon"
       end
