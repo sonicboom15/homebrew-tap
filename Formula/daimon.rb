@@ -5,21 +5,21 @@
 class Daimon < Formula
   desc "The spirit that runs alongside your AI app — a pluggable sidecar runtime for LLMs"
   homepage "https://github.com/sonicboom15/daimon"
-  version "0.2.7"
+  version "0.2.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.7/daimon_0.2.7_darwin_amd64.tar.gz"
-      sha256 "36a359599c36940b3c9a282d89ab0f3235ddd9a5013f65e627f293e9cf5bc956"
+      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.8/daimon_0.2.8_darwin_amd64.tar.gz"
+      sha256 "ad772d544ff19a3006e32200181515201dde8217c390d7df24a556c79ee897fc"
 
       define_method(:install) do
         bin.install "daimon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.7/daimon_0.2.7_darwin_arm64.tar.gz"
-      sha256 "fd9a14ee867589eeb4bf2c43098f19904e95887c00622febd24ae53431f83683"
+      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.8/daimon_0.2.8_darwin_arm64.tar.gz"
+      sha256 "0019cd1b0a5a0a60f2198b052be6288160f814349cbefa9e216db9dadd2ba12d"
 
       define_method(:install) do
         bin.install "daimon"
@@ -29,15 +29,15 @@ class Daimon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.7/daimon_0.2.7_linux_amd64.tar.gz"
-      sha256 "7c1c6d3489d9b84004cd15bfc3001dd86b3c3e5489042eeac516c2928d8c20ba"
+      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.8/daimon_0.2.8_linux_amd64.tar.gz"
+      sha256 "0c8a8c95e9cf012ed07fb3db43b6b3954d2a967825700a217ba3ac2682e3d238"
       define_method(:install) do
         bin.install "daimon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.7/daimon_0.2.7_linux_arm64.tar.gz"
-      sha256 "1eff3f88d14f9778efd1ded69eb668983d4bde404f7f167ea2f8d8f4d077ec28"
+      url "https://github.com/sonicboom15/daimon/releases/download/v0.2.8/daimon_0.2.8_linux_arm64.tar.gz"
+      sha256 "8b147edfe7eef62de530536d8995b979456a79ee5dfa2d6204897dc2fc5e07ff"
       define_method(:install) do
         bin.install "daimon"
       end
